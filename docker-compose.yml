@@ -1,0 +1,13 @@
+version: "3.4"
+
+services: 
+  app:
+    image: server
+    restart: always
+    ports: 
+      - '8080:8080'
+  database:
+    image: mongo:4.2.16
+    restart: always
+
+    
