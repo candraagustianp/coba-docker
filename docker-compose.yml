@@ -4,10 +4,7 @@ services:
   database:
     image: mongo:4.2.16
     restart: always
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: rahasia
-      MONGO_INITDB_DATABASE: test
+  
   app:
     image: server
     restart: always
